@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "ZQLTenCent"
 
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
 
   spec.summary      = "A short description of ZQLTest."
 
