@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "ZQLTenCent"
 
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
 
   spec.summary      = "A short description of ZQLTest."
 
@@ -107,7 +107,7 @@ Pod::Spec.new do |spec|
 
     #}
  
-    #spec.vendored_frameworks = 'ZQLTenCent/Classes/TenCent/TencentOpenAPI.framework'
+    spec.vendored_frameworks = 'Classes/TenCent/TencentOpenAPI.framework'
 
   # spec.public_header_files = "Classes/**/*.h"
 
