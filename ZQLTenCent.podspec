@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "ZQLTenCent"
 
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
 
   spec.summary      = "A short description of ZQLTest."
 
@@ -98,8 +98,16 @@ Pod::Spec.new do |spec|
   #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
 
+	
+    spec.source_files = 'Classes/**/*/*.{h,m}'
+    spec.resource  = 'Classes/**/*/*.bundle'
+    #spec.resource_bundles = {
 
-    #spec.vendored_frameworks = 'zp01yx_bwusbTM/Classes/zp01yx_bwusbTM.framework'
+    #'ZQLTenCent' => ['Classes/**/*/*.bundle']
+
+    #}
+ 
+    #spec.vendored_frameworks = 'ZQLTenCent/Classes/TenCent/TencentOpenAPI.framework'
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -147,14 +155,6 @@ Pod::Spec.new do |spec|
     'VALID_ARCHS' => 'arm64 x86_64',
     }
 
-
-    spec.source_files = 'Classes/**/*'
-    #spec.resource  = 'Classes/**/*'
-spec.resource_bundles = {
-
-'ZQLTenCent' => ['Classes/**/*/*.bundle']
-
-}
-    #ss.dependency "SDWebImage"
+   #ss.dependency "SDWebImage"
 
 end
